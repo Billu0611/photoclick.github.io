@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Photoclick_Home</title>
+    </head>
+    <style>
+        /* css Reset */
+*{
+    margin: 0;
+    padding:0;
+
+}
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    height:150px;
+    
+    
+}
+#navbar h1{
+    height:15px;
+
+}
+/* Navigation Bar: logo and image */
+#logo{
+    margin: 20px 30px;
+    height:150px;
+    text-align: center;
+    color:rgb(22, 20, 20);
+
+}
+#logo img{
+    margin: 5px 5px;
+
+}
+
+/* Navigation bar: list styling*/
+#navbar{
+    position:relative;
+}
+#navbar ul{
+   display:flex;
+
+}
+#navbar::before{
+    content: " ";
+
+    background-color:rgba(240, 181, 72, 0.829);
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+    
+
+
+}
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 75px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover,
+#navbar ul li a.active
+ {    
+    color: white;
+    background-color:black;
+    text-decoration: underline;
+}
+
+
+/*home section*/
+#Home {
+    display: flex;
+    flex-direction:column;
+    padding: 3px 200px;
+    height:490px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#Home::before {
+    content: "";
+    position: absolute;
+    background: url("woman.jpg") no-repeat center center/cover ;
+   
+    height:80%;
+    width:100%;
+    z-index: -1;
+    opacity:0.99;
+    
+
+}
+#Home h1{
+    color:rgb(240, 233, 233);
+    text-align:center;
+}
+#Home p{
+    color: rgb(240, 233, 233);
+    text-align: center;
+    font-size:1.5rem;
+    
+
+}
+/*services section*/
+#services{
+    margin:34px;
+    display: flex;
+    
+
+}
+#services.box{
+    border : 2px solid black;
+    padding:34px;
+    margin:3px 6px;
+    border-radius:28px;
+    background-color:rgba(240, 181, 72, 0.829); 
+}
+#services.box img{
+    height:50px;
+    margin: auto;
+    display:block;
+    
+}
+
+
+/* client section*/
+#client-section{
+     height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height:50px;
+
+}
+
+
+
+
+/*utility classes*/
+.h-primary{
+    font-size: 2.5rem;
+    padding:20px;  
+}
+h.secondary{
+    font-size:1.5rem;
+    padding:12px;
+}
+.btn{
+    padding:10px 50px;
+    border:2px solid black;
+    background-color:black;
+    color:pink;
+    margin: 17px;
+    font-size:1.2rem;
+}
+.btn a:hover{
+    color:rgba(189, 41, 85, 0.63);
+    background:black;
+}
+.center{
+    text-align: center;
+
+}
+.btn a{
+    color:rgba(240, 181, 72, 0.829);
+}
+.container button{
+    color:black;
+    background-color:rgba(240, 181, 72, 0.829);
+    padding:6px 20px;
+
+}
+.container button:hover{
+    color:rgba(240, 181, 72, 0.829);
+    background-color:black;
+    border-color:black;
+}
+.services-container h1{
+font-size: 2rem;
+}
+
+
+
+    .Home h1{
+        margin:34px;
+        height:100px;
+    }
+    .box img{
+        height:100px;
+        margin: 10px;
+        display:flex;
+
+       
+    }
+    .box {
+       border: 1px solid rgb(77, 56, 21);
+        border-radius: 5px;
+        border-bottom-color: rgba(240, 181, 72, 0.829);
+        border-width:25px;
+        margin:30px;
+        padding:20px 70px;
+        background-color: rgb(228, 208, 192);
+        
+         display:flex;
+    }
+
+    .contact img{
+        height: 300px;
+        width: 700px;
+        
+    }
+    
+    .container {
+        border: 2px solid rgba(240, 181, 72, 0.829);
+        margin: 50px 350px;
+        padding: 100px 100px;
+        width: 33%;
+        border-radius: 2px;
+        color: rgb(247, 240, 240);
+        text-align: center;
+        background:url('woman.jpg') no-repeat center center/cover;
+         }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 1 px;
+        border: 2px solid rgba(240, 181, 72, 0.829);
+        margin: 11px auto;
+        font-size: 18px;
+        border-radius: 0px;
+        color: rgb(23, 46, 49);
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+
+    }
+    .navbar ul li a:hover,
+    .navbar ul li a.active {
+        text-decoration: underline;
+        color: black;
+        color: white;
+    background-color:black;
+    }
+    </style>
+    <body>
+        
+        <nav id="navbar">
+            <div id="logo">
+                <img src="logo.png" alt="Photoclick.com" style="width:100px;
+                height:100px;">
+                <div> <h1> Photoclick</h1></div>
+            </div>
+            <ul>
+                <li class="item"><a href="home.html" class="active"><strong>Home</strong></a></li>
+                <li class="item"><a href="#"><strong>Contact</strong></a></li>
+                <li class="item"><a href="Our_work.html"><strong>Our Work</strong></a></li>
+                <li class="item"><a href="about.html" target ="_blank"><strong>About Us</strong></a></li>
+                
+            </ul>
+            
+        </nav>
+        <section id="Home">
+            <h1 class="h-primary">Welcome to Photoclick.com</h1>
+            <p> Photoclick.com is a website that get you the best photographers to capture your best moment at right time...
+            </p>
+            <p> WE DON'T CAPTURE THE WAY IT LOOKS<br>
+                WE CAPTURE THE WAY IT FEELS...</p>
+             <button class="btn"><a href="Booking.html">Book Now</a></button>   
+    
+        </section>
+
+        <section class="services-container">
+            <br>
+            <h1 class="h-primary center" >............Our Specialties...........</h1>
+            <div class="services">
+                <div class="box">
+                    <img src="bride.jpg" alt="">
+                    <h2 class="h.seconary center"><br>#Wedding = ₹40,000/-</h2>
+                    <p class="center"><br><br> “A great marriage is not when the ‘perfect couple’ comes together. It is when an imperfect couple learns to enjoy their differences.”
+                    Give us a chance to help you capture the best moment of your life.</p>
+                </div>
+                <div class="box">
+                    <img src="birthday.jpg" alt="">
+                    <h2 class="h.seconary center"><br>#Birthday = ₹25,000/-</h2>
+                    <p class="center"><br><br>"Birthday is a day to celebrate life and be joyful for the chance to be with friends,family."
+                    We will give best gift on your this birthday...the collection of beautiful memory which will be remembered until your next birthday.</p>
+                </div>
+                <div class="box">
+                    <img src="ritauls.jpg" alt="">
+                    <h2 class="h.seconary center"><br>#Festivals = ₹29,000/-</h2>
+                    <p class="center"><br><br>"The greatness of a culture can be found in its festivals"...lets dicover it together.Lets celebrate these festivals everyday with your beautiful collection of wonderful photos.</p>
+                </div>
+               
+                
+                <div class="box">
+                    <img src="party.jpg" alt="">
+                    <h2 class=""h.seconary center><br>#Party = ₹31,000/-</h2>
+                    <p class="center"><br><br>“Live for today, plan for tomorrow, party tonight, party tonight.” “Here’s to the nights we don’t remember and the friends we won’t forget.” </p>
+                </div>
+            </div>
+         </section>
+         <section>
+            <div class="container">
+                <h1>Contact Us Here For Any Query</h1><br>
+                <form action="submit.html">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter e-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your contact">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your address">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+        
+            </div>
+         </section> 
+        
+        
+    </body>
+</html>
